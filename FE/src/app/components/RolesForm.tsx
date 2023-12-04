@@ -1,4 +1,4 @@
-import { Box, TextField } from "@mui/material";
+import { Box, TextField, Typography } from "@mui/material";
 import { useFormik } from "formik";
 import { useRouter } from "next/navigation";
 import React, { useEffect, useState } from "react";
@@ -95,6 +95,9 @@ const RolesForm = ({ paramID }: any) => {
           gap: 10,
         }}
       >
+        <Typography variant="h5" textAlign="center">
+          {paramID ? "Edit Role" : "Create Role"}
+        </Typography>
         <TextField
           name="roleName"
           label="Role Name"

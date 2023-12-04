@@ -1,4 +1,11 @@
-import { Box, TextField, FormControl, MenuItem, Button } from "@mui/material";
+import {
+  Box,
+  TextField,
+  FormControl,
+  MenuItem,
+  Button,
+  Typography,
+} from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { RolesType } from "../types/RolesType";
 import { useFormik } from "formik";
@@ -132,6 +139,10 @@ const UsersForm = ({ paramID }: any) => {
           gap: 10,
         }}
       >
+        {" "}
+        <Typography variant="h5" textAlign="center">
+          {paramID ? "Edit User" : "Create User"}
+        </Typography>
         <TextField
           name="firstName"
           label="First Name"
@@ -141,7 +152,6 @@ const UsersForm = ({ paramID }: any) => {
           error={formik.touched.firstName && Boolean(formik.errors.firstName)}
           helperText={formik.touched.firstName && formik.errors.firstName}
         />
-
         <TextField
           name="lastName"
           label="Last Name"
