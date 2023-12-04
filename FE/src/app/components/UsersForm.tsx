@@ -140,7 +140,7 @@ const UsersForm = ({ paramID }: any) => {
         }}
       >
         {" "}
-        <Typography variant="h5" textAlign="center">
+        <Typography sx={{ marginBottom: "2rem" }} variant="h5" align="center">
           {paramID ? "Edit User" : "Create User"}
         </Typography>
         <TextField

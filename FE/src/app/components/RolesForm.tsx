@@ -95,7 +95,7 @@ const RolesForm = ({ paramID }: any) => {
           gap: 10,
         }}
       >
-        <Typography variant="h5" textAlign="center">
+        <Typography sx={{ marginBottom: "2rem" }} variant="h5" align="center">
           {paramID ? "Edit Role" : "Create Role"}
         </Typography>
         <TextField
