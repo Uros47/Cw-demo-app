@@ -1,0 +1,254 @@
+{
+  "users": [
+    {
+      "firstName": "Uros",
+      "lastName": "test",
+      "email": "test9@gmail.com",
+      "roleName": "test_role",
+      "createdAt": "Mon Dec 04 2023 14:34:47 GMT+0100 (Central European Standard Time)",
+      "id": 1
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:35:12 GMT+0100 (Central European Standard Time)",
+      "id": 2
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:35:12 GMT+0100 (Central European Standard Time)",
+      "id": 3
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:35:12 GMT+0100 (Central European Standard Time)",
+      "id": 4
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:35:12 GMT+0100 (Central European Standard Time)",
+      "id": 5
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:35:12 GMT+0100 (Central European Standard Time)",
+      "id": 6
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:35:12 GMT+0100 (Central European Standard Time)",
+      "id": 7
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:35:12 GMT+0100 (Central European Standard Time)",
+      "id": 8
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:36:12 GMT+0100 (Central European Standard Time)",
+      "id": 9
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:37:12 GMT+0100 (Central European Standard Time)",
+      "id": 10
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:38:12 GMT+0100 (Central European Standard Time)",
+      "id": 11
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:39:12 GMT+0100 (Central European Standard Time)",
+      "id": 12
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:40:12 GMT+0100 (Central European Standard Time)",
+      "id": 13
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:41:12 GMT+0100 (Central European Standard Time)",
+      "id": 14
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:42:12 GMT+0100 (Central European Standard Time)",
+      "id": 15
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:43:12 GMT+0100 (Central European Standard Time)",
+      "id": 16
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:44:12 GMT+0100 (Central European Standard Time)",
+      "id": 17
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:45:12 GMT+0100 (Central European Standard Time)",
+      "id": 18
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:46:12 GMT+0100 (Central European Standard Time)",
+      "id": 19
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:47:12 GMT+0100 (Central European Standard Time)",
+      "id": 20
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:48:12 GMT+0100 (Central European Standard Time)",
+      "id": 21
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:49:12 GMT+0100 (Central European Standard Time)",
+      "id": 22
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:50:12 GMT+0100 (Central European Standard Time)",
+      "id": 23
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:51:12 GMT+0100 (Central European Standard Time)",
+      "id": 24
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test1@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 14:52:12 GMT+0100 (Central European Standard Time)",
+      "id": 25
+    },
+    {
+      "firstName": "Nemanja",
+      "lastName": "Bole",
+      "email": "bole@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Mon Dec 04 2023 15:01:20 GMT+0100 (Central European Standard Time)",
+      "id": 26
+    }
+  ],
+  "roles": [
+    {
+      "roleName": "admin",
+      "description": "test admina",
+      "id": 1
+    },
+    {
+      "roleName": "superadmin",
+      "description": "super admin test description",
+      "id": 2
+    },
+    {
+      "roleName": "regular",
+      "description": "test description regular",
+      "id": 3
+    },
+    {
+      "roleName": "regular",
+      "description": "nova rola description",
+      "id": 4
+    },
+    {
+      "roleName": "admin",
+      "description": "test admina",
+      "id": 5
+    },
+    {
+      "roleName": "user",
+      "description": "test test",
+      "id": 6
+    },
+    {
+      "roleName": "test_role",
+      "description": "test role text 2",
+      "id": 7
+    },
+    {
+      "roleName": "admin_test",
+      "description": "",
+      "id": 8
+    }
+  ]
+}
