@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import { Box } from "@mui/material";
+import { UserContextProvider } from "./context/UsersContext";
 
 export const metadata: Metadata = {
   title: "CW demo app",
@@ -19,7 +20,9 @@ export default function RootLayout({
         <nav>
           <Navbar />
         </nav>
-        <main style={{ marginTop: "2rem" }}>{children}</main>
+        <main style={{ marginTop: "2rem" }}>
+          <UserContextProvider>{children}</UserContextProvider>
+        </main>
       </body>
     </html>
   );
