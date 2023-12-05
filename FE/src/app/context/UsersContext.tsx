@@ -3,7 +3,34 @@ import React, { useContext, useEffect, useOptimistic, useState } from "react";
 import { createContext } from "react";
 import { UsersType } from "../types/UsersType";
 
-const UsersContext = createContext<any>({} as any);
+interface UsersContextInterface {
+  user: UsersType | null;
+  setUser: (user: UsersType) => void;
+  users: UsersType[] | null;
+  setUsers: (users: UsersType[]) => void;
+  isLoading: boolean;
+  setIsLoading: (isLoading: boolean) => void;
+  fetchUserById: (paramID: any) => void;
+  optimisiticUsers: UsersType[] | null;
+  setOptimisticUsers: (props: any) => any;
+  fetchUsersData: () => void;
+  currentPage: number;
+  rowsPerPage: number;
+  totalCount: number;
+  handleChangePage: (event: unknown, newPage: number) => void;
+  handleChangeRowsPerPage: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  setCurrentPage: (currentPage: number) => void;
+  setRowsPerPage: (rowsPerPage: number) => void;
+  handleSortRequest: (column: string) => void;
+  sortOrder: any;
+  setSortOrder: (prop: any) => void;
+  sortColumn: any;
+  setSortColumn: (prop: any) => void;
+}
+
+const UsersContext = createContext<UsersContextInterface>(
+  {} as UsersContextInterface
+);
 
 interface UsersContextProps {
   children: React.ReactNode;
@@ -113,9 +140,11 @@ export const UserContextProvider = ({ children }: UsersContextProps) => {
     <UsersContext.Provider
       value={{
         user,
-        users,
         setUser,
+        users,
+        setUsers,
         isLoading,
+        setIsLoading,
         fetchUserById,
         optimisiticUsers,
         setOptimisticUsers,
@@ -124,8 +153,12 @@ export const UserContextProvider = ({ children }: UsersContextProps) => {
         handleChangeRowsPerPage,
         currentPage,
         rowsPerPage,
+        setRowsPerPage,
+        setCurrentPage,
         totalCount,
         handleSortRequest,
+        sortOrder,
+        sortColumn,
         setSortOrder,
         setSortColumn,
       }}
