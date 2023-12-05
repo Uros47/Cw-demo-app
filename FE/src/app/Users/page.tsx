@@ -46,7 +46,7 @@ export default function Users() {
     handleSortRequest,
   } = useUsersContext();
 
-  if (users.length === 0) {
+  if (users?.length === 0) {
     return (
       <Box textAlign="center">
         <Typography variant="h4" textAlign="center">
@@ -105,7 +105,7 @@ export default function Users() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {users.map((item: UsersType) => (
+            {users?.map((item: UsersType) => (
               <TableRow key={item.id}>
                 <TableCell>{item.id}</TableCell>
                 <TableCell>{item.firstName}</TableCell>
