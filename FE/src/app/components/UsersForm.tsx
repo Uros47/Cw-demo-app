@@ -19,17 +19,9 @@ import useUsersContext from "../context/UsersContext";
 
 const UsersForm = ({ paramID }: any) => {
   const router = useRouter();
-  const [isLoading, setLoading] = useState(false);
-  // const [user, setUser] = useState<UsersType>({
-  //   firstName: "",
-  //   lastName: "",
-  //   email: "",
-  //   roleName: "",
-  //   createdAt: "",
-  // });
   const [roles, setRoles] = useState<RolesType[]>([]);
 
-  const { user, fetchUserById } = useUsersContext();
+  const { user, fetchUserById, isLoading, setIsLoading } = useUsersContext();
 
   const fetchRoles = async () => {
     const response = await fetch(`${process.env.NEXT_PUBLIC_API}/roles`);
@@ -47,26 +39,9 @@ const UsersForm = ({ paramID }: any) => {
     setRoles(uniqueRoles);
   };
 
-  // const fetchUser = async () => {
-  //   const response = await fetch(
-  //     `${process.env.NEXT_PUBLIC_API}/users/${paramID}`
-  //   );
-  //   const userData: UsersType = await response.json();
-  //   if (paramID) {
-  //     setUser({
-  //       firstName: userData.firstName,
-  //       lastName: userData.lastName,
-  //       email: userData.email,
-  //       roleName: userData.roleName,
-  //       createdAt: userData.createdAt,
-  //     });
-  //   }
-  // };
-
   useEffect(() => {
     fetchRoles();
     if (paramID) {
-      console.log(paramID, "paramid");
       fetchUserById(paramID);
     }
   }, []);
@@ -97,7 +72,7 @@ const UsersForm = ({ paramID }: any) => {
     validationSchema: validationSchema,
     onSubmit: (values: UsersType) => {
       try {
-        setLoading(true);
+        setIsLoading(true);
         const userData: UsersType = {
           firstName: values.firstName,
           lastName: values.lastName,
@@ -121,10 +96,10 @@ const UsersForm = ({ paramID }: any) => {
           if (data.status >= 200) {
             router.push("/Users");
           }
-          setLoading(false);
+          setIsLoading(false);
         }, 2000);
       } catch (error) {
-        setLoading(false);
+        setIsLoading(false);
         throw new Error("User creation failed");
       }
     },
