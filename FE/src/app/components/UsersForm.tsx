@@ -13,20 +13,23 @@ import { UsersType } from "../types/UsersType";
 import { useRouter } from "next/navigation";
 import * as yup from "yup";
 import LoadingButton from "@mui/lab/LoadingButton";
+import useUsersContext from "../context/UsersContext";
 
 // Users Form is dynamic form both for editing existing and creating new users, regarding the paramID
 
 const UsersForm = ({ paramID }: any) => {
   const router = useRouter();
   const [isLoading, setLoading] = useState(false);
-  const [user, setUser] = useState<UsersType>({
-    firstName: "",
-    lastName: "",
-    email: "",
-    roleName: "",
-    createdAt: "",
-  });
+  // const [user, setUser] = useState<UsersType>({
+  //   firstName: "",
+  //   lastName: "",
+  //   email: "",
+  //   roleName: "",
+  //   createdAt: "",
+  // });
   const [roles, setRoles] = useState<RolesType[]>([]);
+
+  const { user, fetchUserById } = useUsersContext();
 
   const fetchRoles = async () => {
     const response = await fetch(`${process.env.NEXT_PUBLIC_API}/roles`);
@@ -44,26 +47,27 @@ const UsersForm = ({ paramID }: any) => {
     setRoles(uniqueRoles);
   };
 
-  const fetchUser = async () => {
-    const response = await fetch(
-      `${process.env.NEXT_PUBLIC_API}/users/${paramID}`
-    );
-    const userData: UsersType = await response.json();
-    if (paramID) {
-      setUser({
-        firstName: userData.firstName,
-        lastName: userData.lastName,
-        email: userData.email,
-        roleName: userData.roleName,
-        createdAt: userData.createdAt,
-      });
-    }
-  };
+  // const fetchUser = async () => {
+  //   const response = await fetch(
+  //     `${process.env.NEXT_PUBLIC_API}/users/${paramID}`
+  //   );
+  //   const userData: UsersType = await response.json();
+  //   if (paramID) {
+  //     setUser({
+  //       firstName: userData.firstName,
+  //       lastName: userData.lastName,
+  //       email: userData.email,
+  //       roleName: userData.roleName,
+  //       createdAt: userData.createdAt,
+  //     });
+  //   }
+  // };
 
   useEffect(() => {
     fetchRoles();
     if (paramID) {
-      fetchUser();
+      console.log(paramID, "paramid");
+      fetchUserById(paramID);
     }
   }, []);
 

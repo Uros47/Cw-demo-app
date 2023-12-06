@@ -4,7 +4,7 @@ import { createContext } from "react";
 import { UsersType } from "../types/UsersType";
 
 interface UsersContextInterface {
-  user: UsersType | null;
+  user: UsersType;
   setUser: (user: UsersType) => void;
   users: UsersType[] | null;
   setUsers: (users: UsersType[]) => void;
@@ -68,7 +68,8 @@ export const UserContextProvider = ({ children }: UsersContextProps) => {
     setSortColumn(column);
   };
 
-  const fetchUserById = async ({ paramID }: any) => {
+  const fetchUserById = async (paramID: any) => {
+    console.log(paramID, "iz contexta");
     try {
       const response = await fetch(
         `${process.env.NEXT_PUBLIC_API}/users/${paramID}`
@@ -131,10 +132,10 @@ export const UserContextProvider = ({ children }: UsersContextProps) => {
     setCurrentPage(0);
   };
 
-  useEffect(() => {
-    fetchUsersData();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentPage, rowsPerPage, sortOrder, sortColumn]);
+  // useEffect(() => {
+  //   fetchUsersData();
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [currentPage, rowsPerPage, sortOrder, sortColumn]);
 
   return (
     <UsersContext.Provider
