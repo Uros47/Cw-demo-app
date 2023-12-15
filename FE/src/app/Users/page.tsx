@@ -62,6 +62,7 @@ export default function Users() {
         : 0;
 
       const data = await users.json();
+      console.log(data, "data users");
       setUsers(data);
       setTotalCount(totalCountValue);
       setIsLoading(false);
@@ -152,28 +153,29 @@ export default function Users() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {users.map((item: UsersType) => (
-              <TableRow key={item.id}>
-                <TableCell>{item.id}</TableCell>
-                <TableCell>{item.firstName}</TableCell>
-                <TableCell>{item.lastName}</TableCell>
-                <TableCell>{item.email}</TableCell>
-                <TableCell>{item.roleName}</TableCell>
-                <TableCell>
-                  {format(new Date(item.createdAt), "dd-MM-yyyy 'at' h:mm a")}
-                </TableCell>
-                <TableCell>
-                  <Box sx={{ display: "flex" }}>
-                    <IconButton
-                      onClick={() => router.push(`/Users/Form/${item.id}`)}
-                      aria-label="edit"
-                    >
-                      <EditIcon color="primary" />
-                    </IconButton>
-                  </Box>
-                </TableCell>
-              </TableRow>
-            ))}
+            {users.length > 0 &&
+              users.map((item: UsersType) => (
+                <TableRow key={item.id}>
+                  <TableCell>{item.id}</TableCell>
+                  <TableCell>{item.firstName}</TableCell>
+                  <TableCell>{item.lastName}</TableCell>
+                  <TableCell>{item.email}</TableCell>
+                  <TableCell>{item.roleName}</TableCell>
+                  <TableCell>
+                    {format(new Date(item.createdAt), "dd-MM-yyyy 'at' h:mm a")}
+                  </TableCell>
+                  <TableCell>
+                    <Box sx={{ display: "flex" }}>
+                      <IconButton
+                        onClick={() => router.push(`/Users/Form/${item.id}`)}
+                        aria-label="edit"
+                      >
+                        <EditIcon color="primary" />
+                      </IconButton>
+                    </Box>
+                  </TableCell>
+                </TableRow>
+              ))}
           </TableBody>
         </Table>
       </TableContainer>

@@ -147,23 +147,24 @@ export default function Roles() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {roles?.map((item: any) => (
-              <TableRow key={item.id}>
-                <TableCell>{item.id}</TableCell>
-                <TableCell>{item.roleName}</TableCell>
-                <TableCell>{item.description}</TableCell>
-                <TableCell>
-                  <Box sx={{ display: "flex" }}>
-                    <IconButton
-                      onClick={() => router.push(`/Roles/Form/${item.id}`)}
-                      aria-label="edit"
-                    >
-                      <EditIcon color="primary" />
-                    </IconButton>
-                  </Box>
-                </TableCell>
-              </TableRow>
-            ))}
+            {roles.length > 0 &&
+              roles.map((item: any) => (
+                <TableRow key={item.id}>
+                  <TableCell>{item.id}</TableCell>
+                  <TableCell>{item.roleName}</TableCell>
+                  <TableCell>{item.description}</TableCell>
+                  <TableCell>
+                    <Box sx={{ display: "flex" }}>
+                      <IconButton
+                        onClick={() => router.push(`/Roles/Form/${item.id}`)}
+                        aria-label="edit"
+                      >
+                        <EditIcon color="primary" />
+                      </IconButton>
+                    </Box>
+                  </TableCell>
+                </TableRow>
+              ))}
           </TableBody>
         </Table>
       </TableContainer>
