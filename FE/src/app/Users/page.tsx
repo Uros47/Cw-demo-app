@@ -19,6 +19,7 @@ import { useRouter } from "next/navigation";
 import EditIcon from "@mui/icons-material/Edit";
 import { UsersType } from "../types/UsersType";
 import { format } from "date-fns";
+import Link from "next/link";
 
 const cellTitles = [
   "Id",
@@ -185,9 +186,11 @@ export default function Users() {
         onPageChange={handleChangePage}
         onRowsPerPageChange={handleChangeRowsPerPage}
       />
-      <Button variant="contained" sx={{ marginTop: "1rem" }} href="/Users/Form">
-        Create New User
-      </Button>
+      <Link href="/Users/Form">
+        <Button variant="contained" sx={{ marginTop: "1rem" }}>
+          Create New User
+        </Button>
+      </Link>
     </Box>
   );
 }

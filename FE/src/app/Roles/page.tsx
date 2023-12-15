@@ -18,6 +18,7 @@ import {
 import EditIcon from "@mui/icons-material/Edit";
 import { useRouter } from "next/navigation";
 import { RolesType } from "../types/RolesType";
+import Link from "next/link";
 
 const cellTitles = ["Id", "Role Name", "Description", "Edit"];
 
@@ -175,9 +176,11 @@ export default function Roles() {
         onPageChange={handleChangePage}
         onRowsPerPageChange={handleChangeRowsPerPage}
       />
-      <Button variant="contained" sx={{ marginTop: "1rem" }} href="/Roles/Form">
-        Create New Role
-      </Button>
+      <Link href="/Roles/Form">
+        <Button variant="contained" sx={{ marginTop: "1rem" }}>
+          Create New Role
+        </Button>
+      </Link>
     </Box>
   );
 }
