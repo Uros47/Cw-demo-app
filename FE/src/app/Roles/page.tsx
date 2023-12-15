@@ -147,7 +147,7 @@ export default function Roles() {
             </TableRow>
           </TableHead>
           <TableBody>
-            {roles.map((item: any) => (
+            {roles?.map((item: any) => (
               <TableRow key={item.id}>
                 <TableCell>{item.id}</TableCell>
                 <TableCell>{item.roleName}</TableCell>

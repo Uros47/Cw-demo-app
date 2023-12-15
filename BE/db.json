@@ -207,6 +207,38 @@
       "roleName": "admin",
       "createdAt": "Mon Dec 04 2023 15:01:20 GMT+0100 (Central European Standard Time)",
       "id": 26
+    },
+    {
+      "firstName": "Uros",
+      "lastName": "Delic",
+      "email": "urosdelic89@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Fri Dec 15 2023 13:13:05 GMT+0100 (Central European Standard Time)",
+      "id": 27
+    },
+    {
+      "firstName": "ccccc",
+      "lastName": "ccccc",
+      "email": "ccccc@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Fri Dec 15 2023 13:13:24 GMT+0100 (Central European Standard Time)",
+      "id": 28
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test@gmail.com",
+      "roleName": "test_role",
+      "createdAt": "Fri Dec 15 2023 13:14:24 GMT+0100 (Central European Standard Time)",
+      "id": 29
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "test9@gmail.com",
+      "roleName": "admin",
+      "createdAt": "Fri Dec 15 2023 13:16:15 GMT+0100 (Central European Standard Time)",
+      "id": 30
     }
   ],
   "roles": [
