@@ -1,3 +1,5 @@
+SIMPLE NEXT.JS APP DEMONSTRATING USERS AND ROLES LOGIC
+
 json-server is used for BE data mock
 https://github.com/typicode/json-server
 
